@@ -3,13 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': ^0.26.3
   '@antfu/ni': ^0.18.0
-  '@antfu/utils': ^0.5.2
   '@types/node': ^18.7.16
   bumpp: ^8.2.1
   eslint: ^8.23.1
   esno: ^0.16.3
   pnpm: ^7.11.0
-  rimraf: ^3.0.2
   typescript: ^4.8.3
   unbuild: ^0.8.10
   vite: ^3.1.0
@@ -18,13 +16,11 @@ specifiers:
 devDependencies:
   '@antfu/eslint-config': 0.26.3_irgkl5vooow2ydyo6aokmferha
   '@antfu/ni': 0.18.0
-  '@antfu/utils': 0.5.2
   '@types/node': 18.7.16
   bumpp: 8.2.1
   eslint: 8.23.1
   esno: 0.16.3
   pnpm: 7.11.0
-  rimraf: 3.0.2
   typescript: 4.8.3
   unbuild: 0.8.10
   vite: 3.1.0
@@ -144,10 +140,6 @@ packages:
   /@antfu/ni/0.18.0:
     resolution: {integrity: sha512-D0eek5EV8wOUpZNVAs/mPyeC5TMWFXqchqCyPiR6Lj5FgmSJw0EpFLqAczHX0O5+Jc07N7NBwBip85Gi1MBJnA==}
     hasBin: true
-    dev: true
-
-  /@antfu/utils/0.5.2:
-    resolution: {integrity: sha512-CQkeV+oJxUazwjlHD0/3ZD08QWKuGQkhnrKo3e6ly5pd48VUpXbb77q0xMU4+vc2CkJnDS02Eq/M9ugyX20XZA==}
     dev: true
 
   /@babel/code-frame/7.18.6:
