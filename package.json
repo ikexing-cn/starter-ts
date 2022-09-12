@@ -6,12 +6,12 @@
   "description": "",
   "author": "ikexing <ikexing@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/ikexing/pkg-name#readme",
+  "homepage": "https://github.com/ikexing-cn/pkg-name#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ikexing/pkg-name.git"
+    "url": "git+https://github.com/ikexing-cn/pkg-name.git"
   },
-  "bugs": "https://github.com/ikexing/pkg-name/issues",
+  "bugs": "https://github.com/ikexing-cn/pkg-name/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
