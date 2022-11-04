@@ -1,11 +1,14 @@
+import { resolve } from 'path'
 import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
   entries: [
-    'src/index',
+    { input: 'src/app' },
   ],
-  declaration: true,
   clean: true,
+  alias: {
+    '~/': resolve(__dirname, 'src')
+  },
   rollup: {
     emitCJS: true,
   },

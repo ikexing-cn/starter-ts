@@ -1,59 +1,25 @@
 {
   "name": "pkg-name",
   "type": "module",
-  "version": "0.0.0",
-  "packageManager": "pnpm@7.5.2",
-  "description": "",
-  "author": "ikexing <ikexing@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/ikexing-cn/pkg-name#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ikexing-cn/pkg-name.git"
-  },
-  "bugs": "https://github.com/ikexing-cn/pkg-name/issues",
-  "keywords": [],
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
-    }
-  },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./dist/index.d.ts"
-      ]
-    }
-  },
-  "files": [
-    "dist"
-  ],
+  "private": "true",
   "scripts": {
     "build": "unbuild",
-    "dev": "vitest -u",
     "lint": "eslint .",
+    "dev": "vite-node src/app.ts -w",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
-    "test": "npm run lint --fix && vitest"
+    "test": "nr lint --fix && vitest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.29.3",
     "@antfu/ni": "^0.18.3",
     "@types/node": "^18.11.9",
-    "bumpp": "^8.2.1",
     "eslint": "^8.26.0",
     "pnpm": "^7.14.2",
     "typescript": "^4.8.4",
     "unbuild": "^0.9.4",
     "vite": "^3.2.2",
+    "vite-node": "^0.24.5",
     "vitest": "^0.24.5"
   }
 }
