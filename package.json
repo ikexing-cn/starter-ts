@@ -1,25 +1,26 @@
 {
   "name": "pkg-name",
   "type": "module",
-  "license": "MIT",
   "private": "true",
+  "license": "MIT",
   "scripts": {
-    "build": "unbuild",
+    "build": "nitropack build",
     "lint": "eslint .",
-    "dev": "vite-node src/app.ts -w",
+    "dev": "nitropack dev",
     "typecheck": "tsc --noEmit",
-    "test": "nr lint --fix && vitest"
+    "test": "nr lint --fix && vitest",
+    "preview": "node .output/server/index.mjs"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.31.0",
     "@antfu/ni": "^0.18.8",
     "@types/node": "^18.11.9",
     "eslint": "^8.28.0",
+    "h3": "^1.0.1",
+    "nitropack": "^1.0.0",
     "pnpm": "^7.17.0",
     "typescript": "^4.9.3",
-    "unbuild": "^1.0.1",
     "vite": "^3.2.4",
-    "vite-node": "^0.25.3",
     "vitest": "^0.25.3"
   }
 }
